@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MyCard extends StatelessWidget {
+  const MyCard({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Dashboard"), actions: const []),
-      body: Center(
+      appBar: AppBar(
+        title: const Text("Card"),
+        centerTitle: true,
+        actions: const [],
+      ),
+      body: SingleChildScrollView(
         child: Column(
           children: [
             Card(elevation: 8, color: Colors.red, child: Text("card1")),
@@ -28,6 +32,7 @@ class MyApp extends StatelessWidget {
             ),
             SizedBox(height: 5),
             Card(
+              color: Colors.blue,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),
               ),
