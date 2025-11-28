@@ -43,7 +43,21 @@ class MyCard extends StatelessWidget {
                   ),
                 ],
               ),
-              child: Text('Card Shape'),
+              child: Text('container 1'),
+            ),
+            SizedBox(height: 15),
+            Card(
+              color: Colors.blue,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Shape bingkai persergi panjang",
+                  style: TextStyle(fontSize: 12.0),
+                ),
+              ),
             ),
           ],
         ),
