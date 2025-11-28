@@ -51,12 +51,21 @@ class MyCard extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5),
               ),
+              borderOnForeground: true,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   "Shape bingkai persergi panjang",
                   style: TextStyle(fontSize: 12.0),
                 ),
+              ),
+            ),
+            SizedBox(height: 15),
+            Card(
+              margin: EdgeInsets.all(16.0),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("margin card", style: TextStyle(fontSize: 10.0)),
               ),
             ),
           ],
