@@ -31,10 +31,17 @@ class MyCard extends StatelessWidget {
               child: Text("container1"),
             ),
             SizedBox(height: 5),
-            Card(
-              color: Colors.blue,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(16),
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+                color: Colors.blue,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.red,
+                    blurRadius: 10,
+                    offset: Offset(5, 1),
+                  ),
+                ],
               ),
               child: Text('Card Shape'),
             ),
