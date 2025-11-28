@@ -75,12 +75,25 @@ class MyCard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(5),
               ),
               borderOnForeground: true,
+              child: Text(
+                "border tidak menimpa konten",
+                style: TextStyle(fontSize: 12.0),
+              ),
+            ),
+            SizedBox(height: 15),
+            Card(
+              color: Colors.red,
+              semanticContainer: true,
+              clipBehavior: Clip.antiAlias,
+              child: Text("auah gelap", style: TextStyle(fontSize: 14)),
+            ),
+            SizedBox(height: 15),
+            Card(
+              color: Colors.yellow,
+              semanticContainer: true,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text(
-                  "Shape bingkai persergi panjang",
-                  style: TextStyle(fontSize: 12.0),
-                ),
+                child: Text("semantic true", style: TextStyle(fontSize: 14.0)),
               ),
             ),
           ],
